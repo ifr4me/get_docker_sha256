@@ -1,54 +1,6 @@
-# coding=utf-8
-# from __future__ import print_function
-# def read_file(filename):
-#     with open(filename) as f:
-#         return [i.strip() for i in f]
-#
-#
-# fl = open("missing.txt", 'w+')
-# setAll = set(open("all2.txt", "r").readlines())
-# print("all2.txt total line:",len(setAll))
-# setNew = set(open("new2.txt", "r").readlines())
-# print("new2.txt total line:",len(setNew))
-#
-# setTemp = setNew.difference(setAll)
-# for user in list(setTemp):
-#     fl.write(''.join(user))
-#
-# fl.close()
-
-# from functools import reduce
-#
-# def fn(x,y):
-#     return x * y
-#
-# def prod(list):
-#     return reduce(fn,list)
-#
-# L1 = [1, 2, 3, 4]
-# L2 = list(map(prod, L1))
-# print(L2)
-# total = 0
-# for x in open("money.txt", "r").readlines():
-#     total = total + int(x)
-# print total
-# from urllib import quote
-# import requests
-# requests.packages.urllib3.disable_warnings()
-# import sys,re
-# reload(sys)
-# sys.setdefaultencoding('utf-8')
-#
-# URL1 = "http://kms.sys.wanmei.net/pages/viewpage.action"
-# URL2 = ".html?pageId=38437967"
-#
-# for x in range(0,256,1):
-#     #print chr(x)
-#     html = requests.get(URL1 + quote(chr(x)) + URL2, verify=False)
-#     print x,quote(chr(x)),html.status_code,html.__sizeof__()
-
 # !/usr/bin/env python
 # -*- coding:utf-8 -*-
+# author ifr4me
 
 import requests
 import json
